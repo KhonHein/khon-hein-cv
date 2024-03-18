@@ -1,8 +1,11 @@
-import { Box, Button, Dialog, DialogActions, DialogContent } from '@mui/material'
+import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import Header from '../Header'
 import Contact from '../Conatct'
-import Testimonial from '../Testimonials'
+
+import Image from 'next/image'
+import { devsIn } from '@/data/skills'
+import DevCard from '../DevCard'
 
 const HomePage = () => {
   const [open,setOpen]=useState(false);
@@ -14,7 +17,17 @@ const HomePage = () => {
           onClick={()=>setOpen(true)}
           >Click && Contact</Button>
         </Box>}
-        <Testimonial/>
+
+        <Box sx={{display:'flex',justifyContent:'center',flexWrap:'wrap'}}>
+          {devsIn&&devsIn.map((item)=>
+          <DevCard key={item.id}
+          id={item.id}
+          name={item.name}
+          img={item.image}
+          caption={item.caption}
+          />
+          )}
+        </Box>
         <Dialog fullWidth open={open} onClose={()=>setOpen(false)} >
           <DialogContent sx={{display:'flex',justifyContent:'center',alignItems:'center',}}>
           <Contact/>

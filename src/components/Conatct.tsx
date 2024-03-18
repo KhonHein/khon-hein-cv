@@ -1,12 +1,11 @@
 
-import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TelegramIcon from '@mui/icons-material/Telegram';
 
 import { Box, Button, TextField, Typography } from '@mui/material';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { config } from '@/utils/config';
+import Link from 'next/link';
+import { contacts } from '@/data/contact';
 
 const Contact = () => {
   const [isSuccess,setSuccess] = useState(false);
@@ -44,10 +43,13 @@ const Contact = () => {
             <Box sx={{display:'flex',justifyContent:'center',alignItems:'center',
             flexDirection:'column',width:100,}}>
 
-                <Button variant='contained' sx={{width:80,m:'.1rem'}}><MarkEmailReadIcon sx={{m:'.1rem'}}/></Button>
-                <Button variant='contained' sx={{width:80,m:'.1rem'}}><FacebookIcon sx={{m:'.1rem'}}/></Button>
-                <Button variant='contained' sx={{width:80,m:'.1rem'}}><TelegramIcon sx={{m:'.1rem'}}/></Button>
-
+            {contacts&&contacts.map((item,index)=>
+            <Link key={index} href={item.url} style={{animation:'zoomIn 2s linear'}}>
+              <Button variant='contained' sx={{width:80,m:'.1rem'}}>
+                <item.icon sx={{m:'.1rem',color:item.color}}/>
+                </Button>
+              </Link>
+            )}    
             </Box>
             <Box 
             sx={{display:'flex',justifyContent:'center',flexDirection:'column',

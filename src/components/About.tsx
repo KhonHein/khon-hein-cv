@@ -57,6 +57,7 @@ const About = () => {
                 alignItems:'center',flexDirection:'column',p:'1rem',
                 borderRadius:'.5rem',
                 m:'.2rem',
+                animation:'zoomIn .5s linear',
                 bgcolor:'#141439',
                 ':hover':{bgcolor:'transparent'}
                 }}

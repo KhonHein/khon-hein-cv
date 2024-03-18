@@ -1,9 +1,36 @@
 
-import SettingsIcon from '@mui/icons-material/Settings';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import SchoolIcon from '@mui/icons-material/School';
+import AddLocationAltIcon from '@mui/icons-material/AddLocationAlt';
 
 import foodiePosSvg from '../../public/images/shop.svg'
 import posSvg from '../../public/images/pos.svg'
 import readSvg from '../../public/images/read.svg'
+import androidSvg from '../../public/images/android.svg'
+import websiteSvg from '../../public/images/website.svg'
+import databaseSvg from '../../public/images/database.svg'
+
+export const devsIn = [
+    {
+        id:1,
+        name:'Android',
+        image:androidSvg,
+        caption:'Designing smooth-running applications with the latest features for every medium.',
+    },
+    {
+        id:2,
+        name:'Website',
+        image:websiteSvg,
+        caption:'Fully compatible and user-friendly dynamic websites to perform the user’s requirements.',
+    },
+    {
+        id:3,
+        name:'Data Modeling',
+        image:databaseSvg,
+        caption:'“You can have data without information, but you cannot have information without data.”',
+    },
+]
 
 export const skillsFrontend = [
     {
@@ -94,33 +121,33 @@ export const skillsBackend = [
 export const tests = [
     {
 
-        icon:SettingsIcon,
+        icon:CalendarMonthIcon,
         title:'',
-        name:"Step One",
-        caption: `I was born in 28th of july , 2000. So I'm 23 in 2023.`,
+        name:"Age",
+        caption: `I was born in 28th of july , 2000. So I'm 24 in 2024.`,
 
     },
     {
 
-        icon:SettingsIcon,
+        icon:SchoolIcon,
         title:'',
-        name:"Step Two",
-        caption: `I was born in 28th of july , 2000. So I'm 23 in 2023.`,
+        name:"Education",
+        caption: `DTEd, Monywa. Shwebo Uni, Eng 3rd yr.`,
 
     },
     {
 
-        icon:SettingsIcon,
+        icon:AddLocationAltIcon,
         title:'',
-        name:"Step Three",
-        caption: `I was born in 28th of july , 2000. So I'm 23 in 2023.`,
+        name:"Live in",
+        caption: `I live in Mandalay, currently live in Mohnyin ,`,
     },
     {
 
-        icon:SettingsIcon,
+        icon:LocalLibraryIcon,
         title:'',
-        name:"Quotes",
-        caption: `I was born in 28th of july , 2000. So I'm 23 in 2023.`,
+        name:"Next",
+        caption: `Studying in Android application development`,
     },
 ]
 

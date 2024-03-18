@@ -24,6 +24,5 @@ export const hobies =[
     },
 ]
 
-export const aboutDescription =`As a full-stack developer, I leverage the latest technologies to transform complex ideas into seamless web experiences. Lets collaborate and bring your cutting-edge digital vision to life.
-As a full-stack developer, I leverage the latest technologies to transform complex ideas into seamless web experiences. Lets collaborate and bring your cutting-edge digital vision to life.
+export const aboutDescription =`"Crafting digital experiences that blend creativity and functionality, I strive to bridge the gap between innovation and user satisfaction. With a passion for problem-solving and a commitment to continuous learning, I architect robust solutions that empower users and drive business success. Let's collaborate to bring your ideas to life and shape the future of the web together."
 `

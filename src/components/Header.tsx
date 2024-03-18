@@ -17,9 +17,9 @@ const Header = () => {
         alignItems:'center',
         animation:'moveDown 1s linear'
         }}>
-          <Typography>Hello, Im</Typography>
-          <Typography variant='h5' sx={{color:'yellow'}}>Khon Hein</Typography>
-          <Typography className='text-warning '>Junior, Web-Developer </Typography>
+          <Typography sx={{fontFamily:'cursive'}}>Hello, Im</Typography>
+          <Typography variant='h5' sx={{color:'yellow',fontFamily:'serif'}}>Khon Hein</Typography>
+          <Typography className='text-warning' sx={{fontFamily:'sans-serif'}}>Junior, Web-Developer </Typography>
         <CTA />
         </Box>
         
