@@ -79,7 +79,7 @@
   margin: 0;
 }
 
-html,
+/* html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -93,6 +93,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #1f1f38;
+  color: white;
+  line-height: 1.7;
+  background-image: url(../../public/images/bg_texture.png);
 }
 
 a {
@@ -103,5 +117,117 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+/* For Firefox */
+::-moz-scrollbar {
+  width: 16x; /* Adjust the width as needed */
+}
+
+/* For Internet Explorer and Edge */
+::-ms-scrollbar {
+  width: 16x; /* Adjust the width as needed */
+}
+
+/* nav component */
+nav {
+  background: rgba(0,0,0,0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 0.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: var(--color-light);
+  font-size: 1.1rem;
+}
+nav .link {
+  background: rgba(0,0,0,0.3);
+}
+
+nav .link-active {
+  background: #387ADF;
+  color: yellow; 
+}
+
+
+
+/* moving box */
+@keyframes moveRight {
+  0% {
+    /* Starting position from left */
+    transform: translateX(-100px); 
+  }
+  100% {
+    /* Ending position from right */
+    transform: translateX(calc(0)); 
+  }
+}
+@keyframes moveLeft {
+  0% {
+    /* Starting position from left */
+    transform: translateX(100px); 
+  }
+  100% {
+    /* Ending position from right */
+    transform: translateX(calc(0)); 
+  }
+}
+@keyframes moveDown {
+  0% {
+    /* Starting position from left */
+    transform: translateY(-100px); 
+  }
+  100% {
+    /* Ending position from right */
+    transform: translateY(calc(0)); 
+  }
+}
+@keyframes moveUp {
+  0% {
+    /* Starting position from left */
+    transform: translateY(100px); 
+  }
+  100% {
+    /* Ending position from right */
+    transform: translateY(calc(0)); 
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0); 
+    opacity: 0;          
+  }
+  100% {
+    transform: scale(1); 
+    opacity: 1;          
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale(3); 
+    opacity: 0;          
+  }
+  100% {
+    transform: scale(1); 
+    opacity: 1;          
   }
 }
