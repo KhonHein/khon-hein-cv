@@ -73,8 +73,8 @@ const About = () => {
           <Typography sx={{m:'.2rem',}}>{aboutDescription}</Typography>
           </Box>
           <Box sx={{display:'flex',justifyContent:'space-around',alignItems:'center',my:'1rem'}}>
-            <Button variant='outlined' sx={{m:'.5rem',color:'yellow'}}>Talk</Button>
-            <Button variant='outlined' sx={{m:'.5rem',color:'yellow'}}>Certificate</Button>
+            <Button sx={{m:'.5rem',color:'yellow'}}>Talk</Button>
+            <Button sx={{m:'.5rem',color:'yellow'}}>Certificate</Button>
           </Box>
         </Box>
       </Box>
