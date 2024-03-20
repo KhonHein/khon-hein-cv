@@ -2,13 +2,18 @@
 
 import ME from '../../public/images/me1.jpg'
 import Image from 'next/image';
+import certi from '../../public/images/ceatificate.jpg';
 
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Dialog, DialogContent, Typography } from '@mui/material';
 import { aboutDescription, hobies } from '@/data/about';
+import { useState } from 'react';
+import Link from 'next/link';
 
 
 
 const About = () => {
+  const [open,setOpen]= useState(false);
+  const cvLink =`https://www.canva.com/design/DAFooDPgtZY/zSvZk3Y-1X4JdoxXfg8BcQ/view?utm_content=DAFooDPgtZY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink`
   return (
     <Box id='about' sx={{m:'1rem',
     }}>
@@ -73,11 +78,20 @@ const About = () => {
           <Typography sx={{m:'.2rem',}}>{aboutDescription}</Typography>
           </Box>
           <Box sx={{display:'flex',justifyContent:'space-around',alignItems:'center',my:'1rem'}}>
-            <Button sx={{m:'.5rem',color:'yellow'}}>Talk</Button>
-            <Button sx={{m:'.5rem',color:'yellow'}}>Certificate</Button>
+            <Link href={cvLink&&cvLink||''} target='_blank' download><Button sx={{m:'.5rem',color:'yellow'}}>
+            Curriculum Vitae
+            </Button></Link>
+            <Button sx={{m:'.5rem',color:'yellow'}}
+            onClick={()=>setOpen(true)}
+            >Certificate</Button>
           </Box>
         </Box>
       </Box>
+      <Dialog open={open} onClose={()=>setOpen(false)} >
+        <DialogContent sx={{display:'flex',justifyContent:'center',}}>
+          <Image width={400} src={certi} alt=''/>
+        </DialogContent>
+      </Dialog>
     </Box>
   )
 }

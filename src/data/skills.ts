@@ -14,7 +14,7 @@ import databaseSvg from '../../public/images/database.svg'
 export const devsIn = [
     {
         id:1,
-        name:'Android',
+        name:'Dynamic App',
         image:androidSvg,
         caption:'Designing smooth-running applications with the latest features for every medium.',
     },

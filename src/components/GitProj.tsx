@@ -46,6 +46,7 @@ const GitPorj = () => {
             </Typography>
         </Box>
         <Link  style={{animation:'zoomIn 2.2s linear',border:'1px solid yellow', borderRadius:'.2rem',margin:'.5rem auto'}}
+        target='_blank'
         href={`https://github.com/KhonHein`}
         >
         <Typography sx={{mr:'.5rem'}}> <GitHubIcon sx={{mx:'.5rem'}}/> Visit To Git</Typography>
