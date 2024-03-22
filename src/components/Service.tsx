@@ -14,8 +14,7 @@ const Service = () => {
             <Box sx={{display:'flex',width:500,p:'1rem',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                 <Typography sx={{my:'.5rem'}}>An Interactive Designer</Typography>
                 <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Esse ea debitis expedita commodi natus dolorum adipisci corrupti, molestiae incidunt exercitationem.
+                Web development is the art and science of creating websites and web applications using programming languages.
                 </Typography>
                 <Box sx={{my:'.5rem'}}>
                     <Button>Learn </Button>
@@ -47,24 +46,16 @@ const Service = () => {
             <Box sx={{display:'flex',width:500,p:'1rem',justifyContent:'space-around',alignItems:'center',flexDirection:'column'}}>
                 <Typography sx={{my:'.5rem'}}>An Interactive Designer</Typography>
                 <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Esse ea debitis expedita commodi natus dolorum adipisci corrupti, 
-                    molestiae incidunt exercitationem.
+                Understanding responsive design principles and backend technologies such as Node.js is crucial for building dynamic and scalable web solutions.
                 </Typography>
                 <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Esse ea debitis expedita commodi natus dolorum adipisci corrupti, 
-                    molestiae incidunt exercitationem.
+                With built-in features like routing, authentication, and ORM, Laravel simplifies common tasks and accelerates the development process.
                 </Typography>
                 <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Esse ea debitis expedita commodi natus dolorum adipisci corrupti, 
-                    molestiae incidunt exercitationem.
+                Moreover, its API routes enable seamless integration with backend services, facilitating the development of full-stack applications with React.
                 </Typography>
                 <Typography>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Esse ea debitis expedita commodi natus dolorum adipisci corrupti, 
-                    molestiae incidunt exercitationem.
+                Next.js is a popular React framework that simplifies the creation of server-side rendered (SSR) and statically generated websites.
                 </Typography>
                 <Box sx={{my:'.5rem'}}>
                     <Button>Learn </Button>
